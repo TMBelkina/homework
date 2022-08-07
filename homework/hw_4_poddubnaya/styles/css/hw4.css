@@ -1,0 +1,95 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container1{
+    background-image: url(../img/ramka1.png);
+    background-repeat: repeat-y;
+    background-position: left;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+  
+}
+
+.container2{
+    background-image: url(../img/ramka2.png);
+    background-repeat: repeat-y;
+    background-position: right;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+}
+
+.container3{
+    background-image: url(../img/ramka3.png);
+    background-repeat: repeat-x;
+    background-position: top;
+	width: 100vw;
+	height: 100vh;
+    position: absolute; 
+}
+
+.container4{
+    background-image: url(../img/ramka4.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+}
+
+
+.container5{
+    background-image: url(../img/ramka5.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0% ;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+    z-index:2;
+}
+
+.container6{
+    background-image: url(../img/ramka6.png);
+    background-repeat: no-repeat ;
+    background-position: 0% 100% ;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+    z-index:1;	
+}
+
+.container7{
+    background-image: url(../img/ramka7.png);
+    background-repeat: no-repeat ;
+    background-position: 100% 0% ;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+    z-index:3;
+
+}
+.container8{
+    background-image: url(../img/ramka8.png);
+    background-repeat: no-repeat ;
+    background-position: 100% 100% ;
+	width: 100vw;
+	height: 100vh;
+    position: absolute;
+    z-index:4;
+}
+
+.text {
+   border: 1px solid transparent;
+   width: 70vw;
+   height: 70vh;
+   margin: 10% 20% 10%; 
+   position: absolute;
+   z-index: 5;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 30px;
+   text-align: center;
+   white-space: normal;
+}
