@@ -10,8 +10,10 @@
 <body>
  <div class="container">
     <form>
-        <span><h1>Registration form</h1></span>
-        
+        <div class="heading">
+            <h1>Registration form</h1>
+        </div>
+            
         <div class="container1">
             <div class="left">
                 <label>First name:</label>
@@ -25,38 +27,42 @@
                 <input type="text">
                 <input type="text">
                 <input type="text">
-                <input type="text">
-                <input type="text">
+                <input type="email">
+                <input type="password">
             </div>
         </div>
+    <br>    
 
-        <div class="sex">
+        <div class="container2">
                 <label>Sex:</label>
-                <input type="radio"><label>Male</label>
-                <input type="radio"><label>Female</label>
+                <input type="radio" name="age">Male
+                <input type="radio" name="age">Female
         </div>
+    <br>
 
-        <div class="checkbox">
+        <div class="container3">
             <label>Checkbox:</label>
-            <input  type="checkbox"><label>I am a student</label>
-            <input  type="checkbox"><label>I am a business man</label>
-            
+            <input type="checkbox">I am a student
+            <input type="checkbox">I am a business man
         </div>
+    <br>
         
-        <div class="birthday">
+        <div class="container4">
             <label>Birthday:</label>
             <input type="date" name="calendar" value="1980-01-01" max="2022-08-28" min="1980-01-01">
-        <div class="submit">
+        </div>    
+    <br>       
+        
+        <div class="container5">
             <label>Submit Button</label>
-            <button type="submit">Submit</button>
+            <button>Submit</button>
         </div>
+    <br>
 
-        <div class="reset">
+        <div class="container5">
             <label>Reset Button</label>
-            <button type="reset">Reset</button>
+            <button>Reset</button>
         </div>
     </form>
- </div>
-    
 </body>
 </html>
