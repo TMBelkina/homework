@@ -1,0 +1,69 @@
+body{
+    background-color: blueviolet;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+span{
+    text-align: center;
+}
+
+label{
+    display: block;
+    line-height: 1.3em;
+}
+
+input{
+    display: block;
+}
+
+.left{
+   float:left;
+   width: 50%;
+   text-align: right;   
+}
+
+.right{
+    float: right;
+    width: 50%;
+}
+
+.sex{
+    position: fixed;
+    top: 30%;
+    left:40%;
+    width:200px;
+    height: 17px;
+    display:inline-flex;
+}
+
+.checkbox{
+    display: inline-flex;
+    position: fixed;
+    top: 35%;
+    left:40%;
+    width:200px;
+    height: 22px;
+}
+
+.birthday{
+    display: inline-flex;
+    position: fixed;
+    top: 45%;
+    left:40%;
+    width:200px;
+    height: 20px;
+}
+
+.submit{
+    position: fixed;
+    top: 50%;
+    left:40%;
+    
+}
+
+.reset{
+    position: fixed;
+    top: 57%;
+    left:40%;
+}
