@@ -26,6 +26,19 @@ aside{
     background-color: greenyellow;
     padding-top: 10px;
 }
+.body::before{
+    content: '';
+    display: block;
+    position:absolute;
+    width: 50px;
+    height: 400px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../img/ball.png);
+    opacity: 0.5;
+}
 
 main{
     grid-area:main;
@@ -86,5 +99,20 @@ p{
     ul{
        display: inline-flex;
     }
+        
+    .body::before{
+        content: '';
+        display: block;
+        position:absolute;
+        width: 50px;
+        height: 400px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-image:none;
+        opacity: 0.5;
+    }
+    
 
 }
