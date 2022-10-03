@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1 = {
+            name: 'Dima',
+            age: 20,
+            hair: 'white',
+            habitats:{
+                isSmoking:false,
+                isDrinking:true,
+                isGay:true,
+                isLearning:true,
+            }
+        }
+
+        let obj2 = {
+            name: 'Dima',
+            age: 20,
+            hair: 'white',
+            habitats:{
+                isSmoking:false,
+                isDrinking:true,
+                isGay:true,
+                isLearning:true,
+            }
+        }
+      
+        // сравнение 2 объектов через длину содержания
+        
+        
+            function compare(obj1,obj2){
+        if(Object.keys(obj1).length == Object.keys(obj1).length){
+            console.log('true')
+        }else{
+            console.log('falce')
+            }
+        }
+
+        compare(obj1,obj2)
+
+        //объекты конверитируются  в строку и сравниваются полученные строки
+        console.log(JSON.stringify(obj1) === JSON.stringify(obj2));
+
+        //если только один уровень вложенности
+
+        function isEqual(object1, object2) {
+        const props1 = Object.getOwnPropertyNames(object1);
+        const props2 = Object.getOwnPropertyNames(object2);
+
+        if (props1.length !== props2.length) {
+        return false;
+        }
+
+        for (let i = 0; i < props1.length; i += 1) {
+        const prop = props1[i];
+
+        if (object1[prop] !== object2[prop]) {
+        return false;
+        }
+    }
+
+        return true;
+    }
+
+        let object1 = {
+    name: 'Dima',
+    age: 20,
+    hair: 'white',
+};
+
+        let object2 = {
+    name: 'Dima',
+    age: 20,
+    hair: 'white',
+};
+
+console.log(isEqual(object1, object2));
+
+
+
+    </script>
+    
+</body>
+</html>
