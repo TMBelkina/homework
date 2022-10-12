@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // возрастание и убывание
+        let arrMax = [2, 3, 78, 34, 54, 12, 21, 32, 09, 23, 45, 67, 56, 54]
+        arrMax.sort(function (a,b){
+            return a - b;
+        });
+        console.log(arrMax);
+
+       let arrMin = [2, 3, 78, 34, 54, 12, 21, 32, 09, 23, 45, 67, 56, 54] 
+       arrMin.sort(function (c,d){
+        return d - c;
+       });
+       console.log(arrMin);
+      // max и min число
+       let array = [2, 3, 78, 34, 54, 12, 21, 32, 09, 23, 45, 67, 56, 54]
+
+function min(arr){
+    let e = 100
+    for(let i = 0; i < arr.length; i++){
+        if(e > arr[i]){
+            e = arr[i]
+        }
+    }
+    console.log(e)
+}
+
+min(array)
+
+function max(arr){
+    let f = 0
+    for(let i = 0; i < arr.length; i++){
+        if(f < arr[i]){
+            f = arr[i]
+        }
+    }
+    console.log(f)
+}
+
+max(array)
+
+
+
+    </script>
+    
+</body>
+</html>

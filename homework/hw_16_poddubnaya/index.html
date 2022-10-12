@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw16</title>
+</head>
+<body>
+    <script>
+
+let cart = []
+
+function cartRandom(max) {
+    return Math.floor(Math.random() * max);
+}
+  
+
+function ourBasket(){
+
+    let obj = {}
+
+    cart.push(obj)
+
+    obj.id = cartRandom(9999999)
+    obj.name = prompt('Введите название товара')
+    obj.price = +prompt('Введите цену')
+    obj.amount = +prompt('Введите количество')
+    obj.sum = obj.price * obj.amount
+    obj.category = prompt('Введите категорию товара')
+    
+    
+
+}
+
+ourBasket()
+
+console.log(cart) 
+    </script>
+</body>
+</html>
