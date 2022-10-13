@@ -7,9 +7,48 @@
     <title>hw17</title>
 </head>
 <body>
+    <form name='search'>
+        <label>
+            Search the site:
+            <input type='text' name='search'>
+        </label>
+        <input type='submit' value='Search!'>
+    </form>
+    <hr>
+    <form name='search-visitors'>
+        <table id="age-table">
+            <tr>
+                <td>Age:</td>
+                <td id="age-list">
+                    <label>
+                        <input type="radio" name="age" value="young">less than 18</label>
+                    <label>
+                        <input type="radio" name="age" value="middle">18-50</label>
+                    <label>
+                        <input type="radio" name="age" value="inyears">more than 50</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Additionally:</td>
+                <td>
+                    <input type="text" name="information[0]" >
+                    <input type="text" name="information[1]" >
+                    <input type="text" name="information[2]" > 
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Search!">
+    </form>
+
     <script>
         
-
+        console.log(document.getElementById('age-table'))
+        console.log(document.querySelectorAll('#age-table label'))
+        console.log(document.querySelector('td'))
+        console.log(document.querySelector('form[name="search"]'))
+        console.log(document.querySelector('form [name="search"]'))
+        console.log(document.querySelector('form > input:last-Child'))
 
     </script>
 </body>
